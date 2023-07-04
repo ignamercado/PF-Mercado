@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+</head>
+
+<body id="body_contacto">
+    <!-- Header -->
+    <header>
+        <div class="container_h_index">
+            <div class="logo">
+                <a href="../index.html"><img class="logoindex" src="../assets/logo.jpeg" alt=""></a>
+            </div>
+
+            <div class="h1_index">
+                <h1>PRAGA ESCUELA DE CONDUCTORES</h1>
+            </div>
+
+            <div class="nav_index">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./cursos.html">Cursos</a></li>
+                        <li><a href="./testimonios.html">Testimonios</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a class="active" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <main id="main_contacto">
+        <form class="form_main2" action="" method="post">
+            <div>
+               <label for="Nombre">INGRESAR NOMBRE</label>
+               <input type="text" name="Nombre" placeholder="Nombre completo"  required> 
+            </div>
+            <div>
+                <label for="Mail">CORREO ELECTRÓNICO</label>
+                <input type="email" name="Mail" placeholder="ejemplo@gmail.com" required>
+            </div>
+            <div>
+                <label for="Contraseña">CONTRASEÑA</label>
+                <input type="password" name="Contraseña" placeholder="Contraseña" required>
+            </div>
+            <!-- <div class="form-floating mb-3">
+                <input type="name" class="form-control" id="floatingName" placeholder="Name">
+                <label for="floatingName">Nombre Completo</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div> -->
+            <br>
+            <div class="fondo_cont">
+                <fieldset>
+                    <legend>CURSO A ELEGIR</legend>
+                    <label for="Inicial">Inicial</label>
+                    <input type="checkbox" name="Inicial" checked required>
+    
+                    <label for="Intensivo">Intensivo</label>
+                    <input type="checkbox" name="Intensivo"  required>
+    
+                    <label for="Perfeccionamiento">Perfeccionamiento</label>
+                    <input type="checkbox" name="Perfeccionamiento"  required>
+    
+                    <label for="Refuerzo">Refuerzo</label>
+                    <input type="checkbox" name="Refuerzo"  required>
+    
+                    
+                </fieldset>
+            </div>
+            <br>
+            <div class="fondo_cont">
+                <fieldset>
+                    <legend>INDIQUE SU EXPERIENCIA</legend>
+                    
+                    <select name="Experiencia">
+                        <option value="Nunca manejé un vehículo">Nunca manejé un vehículo</option>
+                        <option value="Nunca manejé, pero tengo conocimiento teórico">Nunca manejé, pero tengo conocimiento teórico</option>
+                        <option value="Tengo conocimiento, y un poco de práctica">Tengo conocimiento, y un poco de práctica</option>
+                    </select>
+                </fieldset>
+            </div>
+            <br>
+            <div class="fondo_cont">
+                <fieldset>
+                    <legend>CUANDO QUERRÍAS EMPEZAR</legend>
+                    <input type="date">
+                </fieldset>
+            </div> <br>
+            <div class="fondo_cont">
+                <fieldset>
+                    <legend>LIMPIAR O ENVIAR FORMULARIO</legend>
+                    <input type="reset" value="Limpiar" >
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </div>
+            
+        </form>  
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="cont_redes">
+            <p id="redes">SEGUINOS EN NUESTRAS REDES</p>
+        </div>
+        <div class="cont_logos">
+            <a href="https://api.whatsapp.com/send?phone=543517045900" target="_blank"><img class="logos" src="../assets/whatsapp.png"
+                    alt=""></a>
+            <a href="https://www.facebook.com/people/PRAGA-Escuela-de-Conductores/100064059216325/?locale=es_LA&paipv=0&eav=AfY-ml6YUSkKkkdMhr3eZzdYIR21jUAP9GSCDeVwGnu1r_57sIH-1K6GP6NGqyRYswg&_rdr"
+                target="_blank"><img class="logos" src="../assets/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/praga_escuela_de_conductores/?hl=en" target="_blank"><img class="logos"
+                    src="../assets/instagram.png" alt=""></a>
+        </div>
+        <p id="derechos">Copyright © 2023 | Praga Autoescuela</p>
+    </footer>
+    
+</body>
+
+</html>
