@@ -94,7 +94,7 @@ a:link, a:visited {
 
 a:hover {
     font-size: 1.1rem;
-    transition: 0.5s;
+    transition: 2s;
 }
 
 a.active {
