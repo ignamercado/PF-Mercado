@@ -432,6 +432,14 @@ footer {
   
 }
 
+#zoom-image {
+    transition: transform 0.3s;
+}
+  
+#zoom-image:hover {
+    transform: scale(1.05);
+}
+
 #horarios {
     height: 100%;
     width: 1000px;
