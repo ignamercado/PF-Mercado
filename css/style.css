@@ -408,7 +408,6 @@ footer {
 .cont_curs1 {
     width: 50%;
     height: 100%;
-    /* background-color: rgb(230, 249, 136); */
     display: flex;
     padding: 15px;
     
@@ -478,19 +477,76 @@ tr:hover {
     padding: 10px;
 }
 
+/* --------------------MEDIA QUERIES-------------- */
+
+@media screen and (max-width: 1024px) {
+    #curs_body {
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 4fr 1fr;
+        grid-template-columns:  auto;
+        grid-template-areas:
+    
+        "header"
+        "main"
+        "footer";
+        
+    }
+    
+    #horarios {
+        margin: 5%;
+    }
+    .mitabla{
+      margin-left: 200px;
+    }
+    .cont_curs1, .cont_curs2{
+        display: none;
+    }
+   
+    
+}
+
+@media screen and (max-width: 768px) {
+    #curs_body {
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 4fr 1fr;
+        grid-template-columns:  auto;
+        grid-template-areas:
+    
+        "header"
+        "main"
+        "footer";
+        
+    }
+    
+    #horarios {
+        margin: 5%;
+    }
+    .mitabla{
+      margin-left: 200px;
+    }
+    .cont_curs1, .cont_curs2{
+        display: none;
+    }
+   #derechos {
+    margin-left: 350px;
+   }
+    
+}
+
 /* ------------------------------------------TESTIMONIOS HTML----------------------------------------------- */
 
 #body_testi {
     height: 100vh;
     display: grid;
-    grid-template-rows: 1fr 3fr 3fr 1fr;
-    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: auto;
     grid-template-areas:
 
-    "header header"
-    "main main "
-    "main main"
-    "footer footer ";
+    "header"
+    "main"
+    "footer";
     
 }
 
@@ -558,6 +614,60 @@ tr:hover {
     height: 100%;
 }
 
+/* --------------- MEDIA QUERIES -------------- */
+
+@media screen and (max-width: 1024px) {
+    #body_testi {
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-columns: auto;
+        grid-template-areas:
+    
+        "header"
+        "main"
+        "footer";
+        
+    }
+
+    .img_finaltesti {
+        display: none;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    #body_testi {
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-columns: auto;
+        grid-template-areas:
+    
+        "header"
+        "main"
+        "footer";
+        
+    }
+
+    .img_testi {
+        height: 30%;
+        width: 70%;
+    }
+
+    .img_finaltesti {
+        display: none;
+    }    
+
+    .p_texto {
+        font-size: 0.9rem;
+        background-color: rgba(241, 232, 233, 0.422);
+    }
+
+    #derechos {
+        display: none;
+    }
+}
+
 
 
 
@@ -587,4 +697,24 @@ tr:hover {
 
 .fondo_cont:hover {
     background-color: rgba(244, 192, 192, 0.566);
+}
+
+/* ------------MEDIA QUERIES------------ */
+
+@media screen and (max-width: 1024px) {
+    #body_contacto {
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+    
+        "header"
+        "main"
+        "footer";   
+    }
+
+    #main_contacto {
+        font-size: 0.8rem;
+    }
 }
