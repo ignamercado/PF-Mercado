@@ -1,0 +1,44 @@
+// Desconozco el motivo por el cual me toma los otros mixins en otro color como si no funcionara, pero revisé la estructura y los veo correctos; además, me funcionan.
+
+@mixin testimonios ($tamañomq) {
+    @media screen and (max-width: #{$tamañomq}) {
+        @content
+    }
+
+}
+
+@mixin imgtestimonios {
+    @media screen and (max-width: 1024px) {
+        @content
+    }
+}
+
+@mixin header ($tamañoheader) {
+    @media screen and (max-width: #{$tamañoheader}) {
+        @content
+    }
+}
+
+@mixin anchocontacto ($anchocontacto) {
+    @media screen and (max-width: #{$anchocontacto}) {
+        @content
+    }
+}
+
+@mixin nosotros ($nosotros) {
+    @media screen and (max-width: #{$nosotros}) {
+        @content
+    }
+}
+
+@mixin cursos ($cursos) {
+    @media screen and (max-width: #{$cursos}) {
+        @content
+    }
+}
+
+@mixin index ($index) {
+    @media screen and (max-width: #{$index}) {
+        @content
+    }
+}

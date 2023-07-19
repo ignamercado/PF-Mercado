@@ -1,0 +1,267 @@
+//   PAGINA DE INICIO
+  main {
+
+      grid-area: main;
+      grid-template-columns: 2;
+      grid-template-rows: 2;
+
+       #clasesdemanejo {
+          height: 100%;
+          width: 100%; 
+      @include index (1025px){
+        margin-top: 50px;
+        height: 80%;
+       }
+      }
+  }
+
+//  PAGINA DE NOSOTROS 
+
+  #nos_main {
+       background-color: rgb(255, 255, 255);
+       @include nosotros (768px){
+        display: none;
+      }
+      
+ }
+       .nos_div {
+          width: 100%;
+          height: 100%;
+
+// Uso de extend
+        
+$ajusteborde: solid 3px rgba(0, 0, 0, 0.174);
+
+           .img_autito {
+              @extend .nos_div;
+              border-bottom: $ajusteborde;
+              border-right: $ajusteborde;
+              border-top: $ajusteborde;
+
+          }
+
+          @include nosotros (768px){
+            display: none;
+          }
+        }
+ 
+//  PÁGINA DE CURSOS
+
+  #curs_main{
+      height: 70vh;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+ 
+       .cont_curs1 {
+          width: 40%;
+          height: 100%;
+          display: flex;
+          padding: 15px;
+
+       @include cursos (769px){
+        height: 75%;
+        }
+            div {
+                .main_curs_img {
+                height: 100%;
+                width: 100%;
+              } 
+                #zoom-image {
+                transition: transform 0.3s;
+                &:hover{
+                transform: scale(1.05);
+                 }
+               } 
+                  
+           }
+
+           .main_curs_img {
+            height: 100%;
+            width: 50%;
+          } 
+            #zoom-image {
+            transition: transform 0.3s;
+            &:hover{
+            transform: scale(1.05);
+             }
+           } 
+         } 
+
+        
+       #horarios {
+          height: 100%;
+          width: 30%;
+          padding: 5px;
+          display: flex;
+      
+           #h_texto {
+              height: 100%;
+              width: 100%;
+              padding: 5px;
+          
+               #h1_horarios {
+                  text-align: center;
+                     &:hover {
+                      background: linear-gradient(180deg, rgb(226, 172, 172) 0%, rgba(248, 54, 54, 0.564) 20%);
+                     }
+              }
+
+               .mitabla {
+                  text-align: center;
+                  font-size: 1rem;
+                @include cursos (769px){
+                            font-size: 0.7rem;
+                          }
+                       .mitabla tr {
+                          &:hover {
+                              background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(231,204,204,0.5635504201680672) 20%);  
+                          }
+                       }
+                }
+            }
+        }
+       .cont_curs2 {
+          width: 40%;
+          height: 100%;
+          display: flex;
+          justify-content: flex-end; 
+          padding: 15px; 
+
+        }
+           .main_curs_img {
+            height: 100%;
+            width: 50%;
+            @include cursos (769px){
+              height: 75%;
+              }
+          } 
+            #zoom-image {
+            transition: transform 0.3s;
+            &:hover{
+            transform: scale(1.05);
+             }
+           } 
+    }
+
+
+
+
+       
+//  PAGINA DE TESTIMONIOS 
+
+ #main_testi {
+   
+    .cont_h2_testi {
+         width: 100%;
+         height: 20%;
+         display: flex;
+     
+          .h2_testi {
+             font-size: 1.5rem;
+             color: rgb(171, 36, 59);
+             display: flex;
+             flex-basis: 100%;
+             justify-content: center;
+             align-items: center;
+
+             @include testimonios(426px){
+              font-size: 0.8rem;
+          }
+         }
+        }
+      .cont_testimonios {
+         width: 100%;
+         height: 80%;
+         display: inline-flex;
+     
+          .inner_cont_testimonios {
+             width: 16.5%;
+             height: 100%;
+             display: inline-block;
+         
+              .img_testi {
+                 width: 100%;
+                 height: 75%;
+                 margin-top: 25px;
+             }
+
+             @include imgtestimonios(){
+              height: 40%;
+             }
+        }
+          .p_testi {
+             width: 16.5%;
+             height: 100%;
+
+            
+
+              .nombre_testi{
+                display: flex;
+                font-weight: bold;
+                justify-content: center;
+                margin-top: 15px;
+                
+                @include testimonios(1024px){
+                  text-decoration: underline;
+              }
+
+                @include testimonios(769px){
+                  text-decoration: none;
+                  font-size: 0.8rem;
+                  padding-top: 10px;
+                }
+            }
+
+          
+              .p_texto {
+                 display: flex;
+                 flex-basis: 100%;
+                 justify-content: center;
+                 align-items: center;
+                 margin: 0 5px;
+
+               @include testimonios (426px){
+                display: none;
+               }
+
+             }
+              .img_finaltesti {
+                 display: flex;
+                 width: 30%;
+                 margin: 20px 85px;
+                
+                 @include testimonios (768px){
+                  display: none;
+                 }
+
+                
+             }
+
+            
+        }
+    }
+ }
+
+//  PÁGINA DE CONTACTO
+
+ #main_contacto {
+    padding: 20px;
+    font-size: 1.2rem;  
+    
+    @include anchocontacto (425px){
+      width: 90%;
+    }
+}
+
+#main_contacto .form_main2 {
+    text-align: center;
+    &:hover {
+        background-color: rgba(214, 209, 210, 0.621);
+    }
+    .fondo_cont {
+        &:hover {
+            background-color: rgba(244, 192, 192, 0.566);
+        }
+    }
+}

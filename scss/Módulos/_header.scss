@@ -1,0 +1,83 @@
+header {
+
+    //Estrutura grid
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(231,204,204,0.9276960784313726) 75%);
+    height: 15vh;
+    width: 100%;
+    grid-area: header;
+    grid-template-columns: 3;
+    grid-template-rows: 1; 
+
+
+    //Estilados
+        .container_h_index  {
+            height: 15vh;
+            width: 100%;
+            display: flex;  
+        }
+
+            .logo {
+                width: 10%;
+                height: 100%;
+                display: inline-block; 
+
+                @include testimonios(425px){
+                display: none;
+                }
+                
+            }
+
+                .logoindex {
+                    width: 100%;
+                    height: 100%;
+                }
+
+          .h1_index {
+              width: 65%;
+              display: inline-block;
+              text-align: center;
+              font-size: 1.5rem;
+              margin-top: 30px;
+                @include header (426px){
+                    font-size: 0.9rem;
+                    padding-top: 10px;
+                }
+                @include header (1025px){
+                    font-size: 1rem;
+                }
+              }
+             }
+            
+           .nav_index {
+              width: 25%;
+              display: inline-block;
+              text-align: center; 
+          }   
+            
+             ul {
+                 margin-top: 40px;
+                 border: 2px solid rgba(204, 166, 162, 0.049);
+                 background-color: rgba(245, 245, 220, 0.448);
+                 border-radius: 20px;
+             }
+                 li {
+                     display: inline;
+                     padding: 4px;
+                 } 
+                     li a {
+                         text-decoration: none;
+                         &:link, &:visited    {
+                             color: rgb(6, 6, 6);
+                             font-weight: lighter;
+                         } 
+                         &:hover {
+                             font-size: 1.1rem;
+                             transition: 2s;
+                         } 
+                         &:active {
+                             font-weight: bold;
+                             font-size: 1rem;
+                         }
+                     }
+     
+
