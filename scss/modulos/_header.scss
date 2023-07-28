@@ -63,21 +63,24 @@ header {
                  li {
                      display: inline;
                      padding: 4px;
+
+                     
+                     
                  } 
                      li a {
                          text-decoration: none;
                          &:link, &:visited    {
                              color: rgb(6, 6, 6);
                              font-weight: lighter;
+                         }
+                         &:active {
+                             font-weight: bold;
+                             font-size: 1rem;
                          } 
                          &:hover {
                              font-size: 1.1rem;
                              transition: 2s;
-                         } 
-                         &:active {
-                             font-weight: bold;
-                             font-size: 1rem;
-                         }
+                         }    
                      }
      
 

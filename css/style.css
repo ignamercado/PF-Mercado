@@ -11,6 +11,13 @@ body {
   grid-template-areas: "header header" "main aside" "footer footer";
   grid-column-gap: 20px;
   grid-row-gap: 20px; }
+  @media screen and (max-width: 768px) {
+    body {
+      width: 100%;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "header" "main" "aside" "footer"; } }
 
 #nos_body {
   height: 100vh;
@@ -95,12 +102,12 @@ li a {
   li a:link, li a:visited {
     color: #060606;
     font-weight: lighter; }
-  li a:hover {
-    font-size: 1.1rem;
-    transition: 2s; }
   li a:active {
     font-weight: bold;
     font-size: 1rem; }
+  li a:hover {
+    font-size: 1.1rem;
+    transition: 2s; }
 
 main {
   grid-area: main;
@@ -167,9 +174,10 @@ main {
       height: 100%;
       width: 100%;
       padding: 5px; }
-      #curs_main #horarios #h_texto #h1_horarios {
+      #curs_main #horarios #h_texto #h2_horarios {
+        font-size: 2rem;
         text-align: center; }
-        #curs_main #horarios #h_texto #h1_horarios:hover {
+        #curs_main #horarios #h_texto #h2_horarios:hover {
           background: linear-gradient(180deg, #e2acac 0%, rgba(248, 54, 54, 0.564) 20%); }
       #curs_main #horarios #h_texto .mitabla {
         text-align: center;
