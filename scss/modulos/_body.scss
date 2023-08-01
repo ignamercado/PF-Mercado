@@ -84,3 +84,27 @@
      "main"
      "footer";   
  }
+
+  #body_contacto {
+     height: 100vh;
+     display: grid;
+     grid-template-rows: 1fr 3fr 1fr;
+     grid-template-columns: 1fr;
+     grid-template-areas:
+
+     "header"
+     "main"
+     "footer";   
+ }
+
+ #body_error {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+
+    "header"
+    "main"
+    "footer";   
+}

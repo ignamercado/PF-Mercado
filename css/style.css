@@ -47,6 +47,20 @@ body {
   grid-template-columns: 1fr;
   grid-template-areas: "header" "main" "footer"; }
 
+#body_contacto {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "footer"; }
+
+#body_error {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "footer"; }
+
 header {
   background: linear-gradient(0deg, white 0%, rgba(231, 204, 204, 0.927696) 75%);
   height: 15vh;
@@ -280,6 +294,51 @@ main {
     background-color: rgba(214, 209, 210, 0.621); }
   #main_contacto .form_main2 .fondo_cont:hover {
     background-color: rgba(244, 192, 192, 0.566); }
+
+#main_error {
+  background-color: rgba(255, 10, 10, 0.249);
+  display: grid;
+  grid-area: main;
+  grid-template-columns: repeat(2, 1fr);
+  min-width: 100vw;
+  grid-template-rows: 1fr;
+  grid-template-areas: "main div"; }
+  #main_error .container-error {
+    margin-top: 50px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: end; }
+  #main_error .container-error2 {
+    margin-top: 50px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: start; }
+  #main_error .img-error {
+    grid-area: div;
+    height: 75%;
+    width: 70%; }
+  #main_error .img-error {
+    animation-delay: 0.5s; }
+  #main_error .main {
+    grid-area: main; }
+  #main_error #h1-error {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #9f0a0a; }
+  #main_error #p-error {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: #470505; }
+  #main_error #p-volver {
+    font-weight: bold;
+    font-size: 1.2rem; }
+    #main_error #p-volver a {
+      color: #9f0a0a;
+      text-decoration: none; }
 
 aside {
   grid-area: aside;
